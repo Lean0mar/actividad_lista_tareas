@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow-x: hidden; /* Quita la barra de desplazamiento horizontal */
+}
+
+header {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+header h1 {
+  margin: 0;
+  text-align: left; /* Alinea el texto del encabezado a la izquierda */
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Coloca los elementos en línea y separados */
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex-grow: 1; /* El campo de entrada ocupa todo el espacio disponible */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button#agregar {
+  padding: 8px 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin: 5px; /* Espaciado entre los botones de mostrar */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button.delete {
+  margin-left: auto;
+  background-color: #dc3545;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #1c1c1c;
+  color: #fff;
+  width: 100%;
+}
